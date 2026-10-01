@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   semantic-release:
+    if: github.repository == 'mediacms-io/mediacms'
     runs-on: ubuntu-latest
     environment: dev
     steps:

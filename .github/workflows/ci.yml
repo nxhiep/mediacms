@@ -17,4 +17,4 @@ jobs:
     uses: ./.github/workflows/docker-build-push.yml
     secrets: inherit # pass all secrets
     needs: [test]
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: github.repository == 'mediacms-io/mediacms' && github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
